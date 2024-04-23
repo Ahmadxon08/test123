@@ -1,0 +1,27 @@
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -140px !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 9999 !important;
+  background-color: #000;
+  p {
+    display: flex;
+    align-items: center;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 49.3px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    font-family: Roboto;
+    color: rgb(255, 34, 0);
+  }
+}

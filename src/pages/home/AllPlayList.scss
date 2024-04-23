@@ -1,0 +1,96 @@
+.playAll {
+  background-color: #000;
+  width: 100%;
+  padding-bottom: 60px;
+  .back {
+    display: flex;
+    background-color: #00000061;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      width: 60px;
+      height: 40px;
+      padding: 0 6px;
+      gap: 6px;
+      border-radius: 6px;
+      background-color: #6a6767;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &:active{
+        background-color: #524d4d;
+      }
+    }
+  }
+  .allplayLists {
+    display: flex;
+    flex-direction: column;
+    .headFor {
+      h1 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: left;
+        font-family: Roboto;
+        color: white;
+      }
+    }
+
+    .play_body {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+
+      .play_home {
+        width: 164px !important;
+        height: 324px !important;
+        gap: 6px;
+        border-radius: 8px;
+        opacity: 0.04px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background: #333;
+        padding: 20px !important;
+        margin-top: 8px;
+
+        img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 162px;
+          height: 156px !important;
+
+          left: 21px;
+          gap: 0px;
+          border-radius: 4px 0px 0px 0px;
+          opacity: 0px;
+          box-shadow: 0px 4px 19px 0px #00000059;
+        }
+        h3 {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 24px;
+          color: white;
+        }
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: white !important;
+        }
+      }
+    }
+  }
+}

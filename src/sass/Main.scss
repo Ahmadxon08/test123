@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  .foot{
+    display: flex !important;
+    align-items: center;
+    position: sticky !important;
+    bottom: 0 !important;
+    width: 100%;
+    z-index: 2222 !important;
+  }
+  .right{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1111;
+    position: absolute;
+  }
+}
+.container {
+  width: 890px;
+  margin: 0 auto;
+  padding: 0 41px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

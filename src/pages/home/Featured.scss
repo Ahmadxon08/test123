@@ -1,0 +1,31 @@
+.featured {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  width: 100%;
+
+  .feat {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 420px;
+    background-color: rgba(187, 178, 187, 0.152);
+    img {
+      width: 82px;
+      height: 82px;
+      gap: 0px;
+      opacity: 0px;
+    }
+    span {
+      color: rgb(244, 240, 240);
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
