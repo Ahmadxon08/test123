@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { Audioprovider } from "../../context";
 import "./Footer.scss";
+import "react-h5-audio-player/lib/styles.css";
+import AudioPlayer from "react-h5-audio-player";
 // const audio = "./assets/audio.mp3";
 
 const Footer = () => {
@@ -18,12 +20,20 @@ const Footer = () => {
         src={audios?.track?.album?.images[1]?.url}
         alt="this is musical picture"
       />
+
       <span>{audios?.track?.artists[0]?.name}</span>
-      <audio className="audio" controls>
-        <source src={audios?.track?.preview_url} type="audio/mp3" />
-      </audio>
+
+      <AudioPlayer
+        style={{
+          width: "50%",
+          height: "80px",
+        }}
+        src={audios?.track?.preview_url}
+        
+        controls
+      />
     </div>
   );
 };
-  
+
 export default Footer;
